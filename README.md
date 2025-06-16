@@ -15,3 +15,11 @@ Im sorta assuming you work here and will need some of our core tech.
 * hyprpaper
 * virt-viewer
 * and others are needed for the prtty config
+
+## Use this config if...
+* you have an arch machine
+* you want to play with a window manager
+* you dont mind diggin through a config file to find an application name
+* you are not to uppity about my groady way bar CSS
+
+git config --global core.editor "nano"
