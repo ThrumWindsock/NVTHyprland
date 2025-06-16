@@ -1,0 +1,6 @@
+docker exec -t ncdb pg_dump -U nextcloud -d nextcloud -F c -b -v -f /home/thrum/nc/backupfile.dump
+
+
+docker exec -i 2570b3b17c47 pg_restore -U nextcloud -d nextcloud -v /tmp/backup.dump
+
+
