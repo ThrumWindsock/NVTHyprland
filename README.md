@@ -22,6 +22,8 @@ Im sorta assuming you work here and will need some of our core tech.
 * waybar
 * hyprpaper
 * virt-viewer
+* Noto-Fonts
+* Jetbrains-fonts
 * and others are needed for the prtty config
 
 ## Use this config if...
