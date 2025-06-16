@@ -6,6 +6,11 @@ Thats where I come in! Enjoys the nice NVT Hyprland setup, in Thrum flavor!
 
 Drop these files into the .config directory, and make sure you have the right programs installed.
 
+#### New (Thrum)Hyprland Features:
+* 3 finger swipe for workspace changes
+* Super+Shift+S screenshotting
+* Super+Space totally not spotlight search
+
 ![alt text](https://github.com/ThrumWindsock/NVTHyprland/blob/main/hyprnvtdemo.png "Shes a looker")
 
 
