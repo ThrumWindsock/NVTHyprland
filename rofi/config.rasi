@@ -2,7 +2,7 @@
 	drkorange: rgba(193, 85, 23, 70 %);
 	drkblu: rgba(9, 72, 133, 70 %);
 	ltblu: rgba(67, 133, 167, 30 %);
-	drkred: rgba(145, 22, 27, 30 %);
+	drkred: rgba(145, 22, 27, 70 %);
 	ltorange: rgba(231, 112, 30, 30 %);
 	ltorangeborder: rgba(231, 112, 30, 100 %);
 	drkbluborder: rgba(9, 72, 133, 100 %);
@@ -236,8 +236,10 @@ element normal.normal {
     border-color: @ltorangemenu;
 }
 element normal.urgent {
-    background-color: var(urgent-background);
-    text-color:       var(urgent-foreground);
+    background-color: @bg;
+    text-color: @text-color;
+    border: 0 0 3 10;
+    border-color: @ltorangemenu;
 }
 element normal.active {
     background-color: @bg;
@@ -252,12 +254,16 @@ element selected.normal {
     border-color: @text-color;
 }
 element selected.urgent {
-    background-color: var(selected-urgent-background);
-    text-color:       var(selected-urgent-foreground);
+    background-color: @drkred;
+    text-color: @ltorangemenu;
+    border: 0 0 3 10;
+    border-color: @text-color;
 }
 element selected.active {
-    background-color: var(selected-active-background);
-    text-color:       var(selected-active-foreground);
+    background-color: @drkred;
+    text-color: @ltorangemenu;
+    border: 0 0 3 10;
+    border-color: @text-color;
 }
 element alternate.normal {
     background-color: @bg;

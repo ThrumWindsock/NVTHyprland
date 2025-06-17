@@ -18,7 +18,7 @@ Drop these files into the .config directory, and make sure you have the right pr
 
 Im sorta assuming you work here and will need some of our core tech.
 
-* wofi
+* rofi-wayland
 * waybar
 * hyprpaper
 * virt-viewer
@@ -30,6 +30,6 @@ Im sorta assuming you work here and will need some of our core tech.
 * you have an arch machine
 * you want to play with a window manager
 * you dont mind diggin through a config file to find an application name
-* you are not to uppity about my groady way bar CSS
+* you are not too uppity about my groady way bar CSS
 
-git config --global core.editor "nano"
+
