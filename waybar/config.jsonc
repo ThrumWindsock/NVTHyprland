@@ -3,6 +3,7 @@
 	"position": "top",
 
 	"modules-left": [
+		"custom/power",
 	//	"sway/mode",
 	//	"sway/workspaces",
 	//	"custom/arrow10",
@@ -11,7 +12,8 @@
 	//	"custom/arrow11",
 		"cpu",
 	//	"custom/arrow12",
-		"temperature"
+		"temperature",
+		"hyprland/window"
 	//	"custom/arrow13"
 	],
 	"modules-center": [
@@ -42,6 +44,11 @@
 
 	// Modules
 
+	"custom/power": {
+		"format": "", // This icon is provided by the Awesome-fonts collection, not sure how to paste it unfortunately
+
+		"on-click": "sh ~/.config/rofi/powermenu.sh"
+	},
 	"battery": {
 		"interval": 10,
 		"states": {

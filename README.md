@@ -24,6 +24,8 @@ Im sorta assuming you work here and will need some of our core tech.
 * virt-viewer
 * Noto-Fonts
 * Jetbrains-fonts
+* Font Awesome
+* Sway (for controls)
 * and others are needed for the prtty config
 
 ## Use this config if...
