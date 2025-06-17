@@ -32,4 +32,3 @@ Im sorta assuming you work here and will need some of our core tech.
 * you dont mind diggin through a config file to find an application name
 * you are not too uppity about my groady way bar CSS
 
-
