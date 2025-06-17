@@ -1,0 +1,94 @@
+@import "config.rasi"
+* {
+  background-color: transparent;
+  font: @icon-font;
+}
+#window {
+  background: transparent;
+  border-radius: 20px;
+  children: [ horibox ];
+}
+#horibox {
+  children: [ listview ];
+  border-radius: 20px;
+}
+#listview {
+  layout: horizontal;
+  spacing: 90 px;
+  lines: 5;
+  padding: 0 0 0 15;
+}
+element {
+  background-color: @bg;
+  border-color: @scrollbar-color;
+  text-color: @bg;
+  children: [element-text];
+  border-radius: 5 px;
+}
+element normal.normal {
+    background-color: @bg;
+    text-color: @text-color;
+    border: 3 3 5 10;
+    border-color: @ltorangemenu;
+}
+element normal.urgent {
+    background-color: @bg;
+    text-color: @text-color;
+    border: 3 3 5 10;
+    border-color: @ltorangemenu;
+}
+element normal.active {
+    background-color: @bg;
+    text-color: @ltorangemenu;
+    border: 3 3 5 10;
+}
+element selected.normal {
+    background-color: @bg;
+    text-color: @ltorangemenu;
+    border: 3 3 5 10;
+    border-color: @text-color;
+}
+element selected.urgent {
+    background-color: @bg;
+    text-color: @ltorangemenu;
+    border: 3 3 5 10;
+    border-color: @text-color;
+}
+element selected.active {
+    background-color: @bg;
+    text-color: @text-color;
+    border: 3 3 5 10;
+    border-color: @text-color;
+}
+element alternate.normal {
+    background-color: @bg;
+    text-color: @text-color;
+    border: 3 3 5 10;
+    border-color: @ltblumenu;
+}
+element alternate.urgent {
+    background-color: @bg;
+    text-color: @ltblumenu;
+    border: 3 3 5 10;
+    border-color: @border-color2;
+}
+element alternate.active {
+    background-color: @bg;
+    text-color: @ltblumenu;
+    border: 3 3 5 10;
+    border-color: @border-color2;
+}
+element-text {
+  font-size: 256 px;
+  background-color: transparent;
+  text-color: @text-color;
+  color: @text-color; 
+  border: 0px;
+  padding: 20 40 20 40;
+}
+element-icon {
+  size: 32 px;
+  background-color: @bg;
+  padding: 0 0 0 0;
+  alignment: vertical;
+}
