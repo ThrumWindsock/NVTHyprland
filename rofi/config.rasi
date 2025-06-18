@@ -8,11 +8,11 @@
 	drkbluborder: rgba(9, 72, 133, 100 %);
 	greyblack:  rgba(40, 40, 40, 90 %);
 	white: rgba( 228, 213, 183, 100 %);
-
+        navyblu: rgba(0, 4, 53, 80 %);
 	ltorangemenu: rgba(231, 112, 30, 100 %);
     ltblumenu: rgba(67, 133, 167, 100 %);
 
-	bg: @greyblack;
+	bg: @navyblu;
 	border-color1: @ltorange;
 	border-color2: @ltblu; 
 	foreground-color: @ltblu;
@@ -192,6 +192,7 @@ configuration {
 }
 window {
   background-color: @bg;
+  border-color: @border-color2;
 }
 
 prompt

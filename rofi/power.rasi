@@ -1,25 +1,48 @@
-@import "config.rasi"
 * {
   background-color: transparent;
   font: @icon-font;
+  drkorange: rgba(193, 85, 23, 70 %);
+  drkblu: rgba(0, 4, 53, 80 %);
+  ltblu: rgba(67, 133, 167, 30 %);
+  drkred: rgba(145, 22, 27, 70 %);
+  ltorange: rgba(231, 112, 30, 30 %);
+  ltorangeborder: rgba(231, 112, 30, 100 %);
+  drkbluborder: rgba(9, 72, 133, 100 %);
+  greyblack:  rgba(40, 40, 40, 90 %);
+  white: rgba( 228, 213, 183, 100 %);
+
+  ltorangemenu: rgba(231, 112, 30, 100 %);
+  ltblumenu: rgba(67, 133, 167, 100 %);
+
+  bg: @drkblu;
+  border-color1: @ltorange;
+  border-color2: @ltblu;
+  foreground-color: @ltblu;
+  text-color: @white;
+  scrollbar-color: @drkorange;
 }
 #window {
-  background: transparent;
+  background-color: transparent;
   border-radius: 20px;
   children: [ horibox ];
+  border: 2;
+  border-color: @ltorange;
 }
 #horibox {
   children: [ listview ];
-  border-radius: 20px;
+  border: 0;
+  border-color: transparent;
 }
 #listview {
   layout: horizontal;
   spacing: 90 px;
   lines: 5;
-  padding: 0 0 0 15;
+  padding: 10 0 10 15;
+  background: transparent;
+  border: 0;
 }
 element {
-  background-color: @bg;
+  background-color: transparent;
   border-color: @scrollbar-color;
   text-color: @bg;
   children: [element-text];
@@ -43,8 +66,8 @@ element normal.active {
     border: 3 3 5 10;
 }
 element selected.normal {
-    background-color: @bg;
-    text-color: @ltorangemenu;
+    background-color: @text-color;
+    text-color: @border-color2;
     border: 3 3 5 10;
     border-color: @text-color;
 }
@@ -58,7 +81,7 @@ element selected.active {
     background-color: @bg;
     text-color: @text-color;
     border: 3 3 5 10;
-    border-color: @text-color;
+    border-color: @bg;
 }
 element alternate.normal {
     background-color: @bg;
@@ -82,13 +105,13 @@ element-text {
   font-size: 256 px;
   background-color: transparent;
   text-color: @text-color;
-  color: @text-color; 
   border: 0px;
   padding: 20 40 20 40;
 }
 element-icon {
   size: 32 px;
-  background-color: @bg;
+  background-color: transparent;
   padding: 0 0 0 0;
   alignment: vertical;
+  icon-color: @border-color2;
 }
