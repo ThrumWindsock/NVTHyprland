@@ -26,14 +26,11 @@ case "$chosen" in
         ;;
 
     "$lock")
-        # TODO Add your lockscreen command.
+        hyprlock
         ;;
 
     "$suspend")
-        # Pause music and mute volume before suspending.
-        mpc --quiet pause
-        amixer set Master mute
-        # TODO Add your suspend command.
+        systemctl suspend
         ;;
 
     "$log_out")

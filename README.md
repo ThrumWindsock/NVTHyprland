@@ -20,7 +20,7 @@ Im sorta assuming you work here and will need some of our core tech.
 
 * rofi-wayland
 * waybar
-* hyprpaper
+* hyprpaper hyprlock hypridle
 * virt-viewer
 * Noto-Fonts
 * Jetbrains-fonts
