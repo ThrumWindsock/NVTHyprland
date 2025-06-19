@@ -3,7 +3,7 @@
   font: @icon-font;
   drkorange: rgba(193, 85, 23, 70 %);
   drkblu: rgba(0, 4, 53, 80 %);
-  ltblu: rgba(67, 133, 167, 30 %);
+  ltblu: rgba(67, 133, 167, 80 %);
   drkred: rgba(145, 22, 27, 70 %);
   ltorange: rgba(231, 112, 30, 30 %);
   ltorangeborder: rgba(231, 112, 30, 100 %);
@@ -35,7 +35,7 @@
 }
 #listview {
   layout: horizontal;
-  spacing: 90 px;
+  spacing: 80 px;
   lines: 5;
   padding: 10 0 10 15;
   background: transparent;
@@ -43,6 +43,7 @@
 }
 element {
   background-color: transparent;
+  border: 0;
   border-color: @scrollbar-color;
   text-color: @bg;
   children: [element-text];
@@ -66,15 +67,15 @@ element normal.active {
     border: 3 3 5 10;
 }
 element selected.normal {
-    background-color: @text-color;
-    text-color: @border-color2;
-    border: 3 3 5 10;
-    border-color: @text-color;
+    background-color: @bg;
+    text-color: @ltorange;
+    border: 5 20 5 20;
+    border-color: @drkorange;
 }
 element selected.urgent {
     background-color: @bg;
     text-color: @ltorangemenu;
-    border: 3 3 5 10;
+    border: 5 20 5 20;
     border-color: @text-color;
 }
 element selected.active {
@@ -107,6 +108,13 @@ element-text {
   text-color: @text-color;
   border: 0px;
   padding: 20 40 20 40;
+}
+element-text selected.normal {
+  font-size: 512 px;
+  background-color: @text-color;
+  text-color: @ltblu;
+  border: 0px;
+  padding: 2 2 2 2;
 }
 element-icon {
   size: 32 px;

@@ -252,7 +252,7 @@ element selected.normal {
     background-color: @drkred;
     text-color: @ltorangemenu;
     border: 0 0 3 10;
-    border-color: @text-color;
+    border-color: @drkred;
 }
 element selected.urgent {
     background-color: @drkred;
@@ -283,7 +283,7 @@ element alternate.active {
     border-color: @border-color2;
 }
 element selected {
-  background-color: #000000;
+  background-color: @drkred;
 }
 element-text {
   background-color: @bg;
